@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Weather App</title>
-</head>
-<body>
-    <div class="jumbotron" style="margin-bottom: 0px; color: blue; background-color: cornsilk;">
-        <h3 class="text-center text-primary">Get Current Weather</h3>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Weather App</title>
+    </head>
+    <body>
 
-    <div class="container">
-        <div class="row" style="margin-bottom: 20px;">
-        <h3 class="text-center text-primary">Enter City</h3>
-        <span id="error"></span>
+        <div class="jumbotron" style="margin-bottom: 0px; color: blue; background-color: cornsilk;">
+            <h3 class="text-center text-primary">Get The Weather</h3>
         </div>
+       
+        <div class="container-fluid"> 
+             <div class="row"> 
+             <div class="col-lg-3 bg-light pt-3 pb-3"> 
+            <h5>Search for a city:</h5>
+        
 
-    <div class="row form-group form-inline" id="rowDiv">
-        <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
-        <button id="submitWeather" class="btn btn-primary">Search City</button>
-    </div>
+            <div class="input-group mb-3"> 
+                <input id="searchTerm" type="text" class="form-control" placeholder="City name..." class="input-group-append">
+                <button id="searchBtn" class="btn btn-primary" type="button" id="button-addon2"><i class="far fa-search"></i></button>
+            </div>  
 
-    <div id="show"></div>
+            <div class="card"> 
+                <ul class="list-group list-group-flush list"></ul>
+            </div> 
+        
+            <div class="col-lg-9"> 
+                <div id="currentCity" class="mt-4"></div>
+            </div> 
     
-    </div>
+             
+            <div class="mt-4 col-md-12"> 
+                <h5 id="forecastH5" class="mt-3 hide">5-Day Forecast:</h5>
+                <div id="forecast" class="row"></div> 
+            </div> 
+        </div> 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="weather.js"></script>
+    </body>
 
-    <script src=""
-    
-    <script src="script.js"></script>
-</body>
 </html>
