@@ -1,5 +1,7 @@
-var APIkey = "5b82c3b3d0b42dd0f5f3cf18e66273d8";
-var queryURL =  "https://api.openweathermap.org/data/2.5/weather?" + APIkey;
+function getWeather() {
+
+var APIkey = "53477121c3f78ed654ec3898a6009e4e0";
+var queryURL =  "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + APIkey;
 
 $.ajax({
   url: queryURL,
@@ -10,34 +12,17 @@ $.ajax({
   console.log(response);
 
 
-var city = $()
+// $("#searchBtn").on("click", function(){
+//     $('#forecastH5').addClass('show');
 
+//     city = $("searchTerm").val();
+//     $("#searchTerm").val();
 
-$("#searchBtn").on("click", function(){
-    $('#forecastH5').addClass('show');
-
-    city = $("searchTerm").val();
-    $("#searchTerm").val();
-
-var d = new Date();
-document.getElementById().innerHTML = d; 
-
-var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-console.log(Math.floor(tempF))
-console.log(response.main.humidity)
-console.log(response.wind.speed)
-
-var day = Number(results[i].dt_txt.split('-')[2].split(' ')[0]);
-      var hour = results[i].dt_txt.split('-')[2].split(' ')[1];
-      console.log(day);
-      console.log(hour);
-})
+// var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+// console.log(Math.floor(tempF))
+// console.log(response.main.humidity)
+// console.log(response.wind.speed)
    
-
-function makeList() {
-    var listItem = $("<li>").addClass("list-group-item").text(city);
-    $(".list").append(listItem);
-}
 
 function getCurrentConditions () {
     
@@ -101,9 +86,3 @@ function getCurrentForecast() {
     }
 });
 
-}
-}
-
-    
- 
-    
