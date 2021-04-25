@@ -1,10 +1,33 @@
 body {
     background-image: url('img/moraine_lake_canadian_rockies-wallpaper-1600x900.jpg');
     background-size: cover;
+    color: rgb(27, 148, 204)
+}
+
+h1 {
+    font-family: "Papyrus", "Copperplate", fantasy;
+    font-size: 75px;
 }
 
 input {
-    margin-right: 1200px;
+    margin-right: 1150px;
+    padding-top: 20%;
 }
 
+.btn-outline-dark {
+    font-size: 20px;
+    color: rgb(27, 148, 204)
+}
+
+.col-9 {
+    font-family: "Papyrus", "Copperplate", fantasy;
+    font-size: 35px;
+ 
+}
+
+.col-4 {
+    font-family: "Papyrus", "Copperplate", fantasy;
+    font-size: 20px;
+
+}
 
