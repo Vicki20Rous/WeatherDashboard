@@ -1,9 +1,10 @@
-*{
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-image: url('img/moraine_lake_canadian_rockies-wallpaper-1600x900.jpg');
+    background-size: cover;
 }
 
-body{
-    background-color: purple;
+input {
+    margin-right: 1200px;
 }
+
+

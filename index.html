@@ -8,38 +8,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
-</head>
+  </head>
 
- <body>
-   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+  <body>
+    <div class="container-left">
       <h1>Weather Dashboard</h1>
+    </div>
     <br>
     <br>
       <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Search City">
-          <div class="input-group-append">
+        <input type="text" class="form-control" placeholder="Search City">
+      </div>
+        <div class="input-group-append">
+          <button type="search" class="btn btn-outline-dark">Search</button>
+          <button type="clear-all" class="btn btn-outline-dark">Clear</button>
         </div>
-        <button class="btn btn-success" type="button">Search</button>
-        <button class="btn btn-primary" id="clear-all">Clear</button>
-      </div>
+      
     <br>
     <br>
-    <div class="card">
-      <h2>Current Weather</h2>
+      <div class="container">
+        <div class="row">
+        <div class ="col-9">Current Weather</div>
+          <div class="col-6">Current City<br>Current Date<br>Forecast<br>Humidity<br>Wind</div>
     </div>
-      <div class="card-body">
-        <h4 class="card-title">Current City</h4>
-        <h4 class="card-title">Current Date</h4>
-        <p class="card-text">Forecast</p>
-        <p class="card-text">Humidity</p>
-        <p class="card-text">Wind</p>
-      </div>
-  </div>
-    
-  <script src="script.js"></script>
 
-</body>
+
+    
+  </body>
+  <script src="script.js"></script>
 </html>
