@@ -4,45 +4,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Bootstrap CSS CDN  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Weather</title>
+    <title>Weather App</title>
 </head>
 
  <body>
+   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-    <div class="jumbotron" style="background-color: purple ; color: black;">
-    <h1 class="text-center">
-      <strong>Weather Dashboard</strong>
-    </h1>
-  </div>
+      <h1>Weather Dashboard</h1>
     <br>
-      <div class="form-group">
-          <label for="search">Search City</label>
-          <input type="text"
-           class="form-control" id="search-term">
+    <br>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search City">
+          <div class="input-group-append">
         </div>
-        <button type="searchBtn" class="btn btn-primary" id="searchBtn">Search</button>
+        <button class="btn btn-success" type="button">Search</button>
         <button class="btn btn-primary" id="clear-all">Clear</button>
       </div>
     <br>
+    <br>
     <div class="card">
-      <strong>Current Weather</strong>
+      <h2>Current Weather</h2>
     </div>
-      <img class="img" src="https://openweathermap.org/img/w/" style="width: 100%;">
       <div class="card-body">
         <h4 class="card-title">Current City</h4>
         <h4 class="card-title">Current Date</h4>
@@ -51,17 +38,8 @@
         <p class="card-text">Wind</p>
       </div>
   </div>
-  
     
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

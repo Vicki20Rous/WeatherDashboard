@@ -1,7 +1,9 @@
-.hide {
-    display: none;
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.show {
-    display: block;
+body{
+    background-color: purple;
 }
